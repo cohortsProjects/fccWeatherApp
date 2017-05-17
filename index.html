@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>Weather App</title>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+
+<body>
+
+  <div class="container">
+    <h2 class="title-header text-center">FCC Weather App</h2>
+
+    <!--fields to hold updated weather information-->
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-md-4">current</div>
+      <div class="col-md-4">feels like</div>
+      <div class="col-md-4">tomorrow</div>
+    </div>
+  </div>
+
+<!--form to choose options-->
+  <div class="container degree-selection">
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="celsius" value="option1" checked>
+        Celsius
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="farenheit" value="option2">
+        Fahrenheit
+      </label>
+    </div>
+
+    <div class="container city-selection">
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="current-city" value="option1" checked>
+          Weather Where I am?
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="other-city" value="option2">
+          Weather in a differnt city?
+            <select class="form-control other-city-select">
+              <option>Chicago</option>
+              <option>New York</option>
+              <option>Los Angelas</option>
+              <option>Dallas</option>
+              <option>Seattle</option>
+            </select>
+        </label>
+      </div>
+
+    <button type="submit" class="btn btn-default">UPDATE</button>
+  </div>
+      <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
